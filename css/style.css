@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+nav{
+    display: none;
+}
+
+img{
+    max-width: 100%; /* La imagen nunca será más grande que el ancho de la pantalla */
+    height: auto; /*Mantiene la proporción de la imagen */
+    display: block; /*Para eliminar el espacio extra alrededor de la imagen */
+    margin: auto; /*Para centrar la imagen horizontalmente */
+}
+
+header{
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+header p{
+    text-align: center;
+    padding: 10px;
+}
+
+.barra-de-busqueda{
+    display: flex;
+}
+
+.burger-menu{
+    text-align: center;
+    font-size: 2em;
+}
+
+.burger-menu i{
+    background-color: #03264C;
+    padding: 5px;
+    color: white;
+    border-radius: 5px
+}
+
+/* estilos del main */
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ultima-visita{
+    display: block;
+} 
+
+.ultima-visita .article{
+    background-color: white;
+    max-width: 100%;
+    /* margin: auto; */
+    padding: 20px;
+    margin-top: 4px;
+}
+
+.ultima-visita .article .descuento{
+    color: rgb(16, 179, 16);
+}
+
+.ultima-visita article{
+    padding: 10px;
+}
+
+.ultima-visita .article .descripcion{
+    margin-top: 30px;
+    display: none;
+}
+
+.ultima-visita h2{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.ultima-visita .article i{
+    color: rgb(16, 179, 16);
+    border: 2px solid rgb(44, 170, 219);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.article .precio{
+    font-size: 18px;
+}
+
+.article .descuento{
+    font-size: 16px;
+}
+
+.article .descripcion{
+    font-size: 16px;
+}
+
+.ofertas{
+    display: block;
+} 
+
+.ofertas .article{
+    background-color: white;
+    max-width: 100%;
+    /* margin: auto; */
+    padding: 20px;
+    margin-top: 4px;
+}
+
+.ofertas .article .descuento{
+    color: rgb(16, 179, 16);
+}
+
+.ofertas article{
+    padding: 10px;
+}
+
+.ofertas .article .descripcion{
+    margin-top: 30px;
+    display: none;
+}
+
+.ofertas h2{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.ofertas .article i{
+    color: rgb(16, 179, 16);
+    border: 2px solid rgb(44, 170, 219);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.article .precio{
+    font-size: 18px;
+}
+
+.article .descuento{
+    font-size: 16px;
+}
+
+.article .descripcion{
+    font-size: 16px;
+}
+/* ------------------ */
+
+/* estilos del footer */
+footer{
+    background-color: white;
+    padding: 10px;
+}
+
+.pie-de-pagina{
+    margin: 20px;
+}
+
+.pie-de-pagina h3{
+    text-align: center;
+}
+
+.pie-de-pagina p{
+    text-align:center;
+}
+
+.iconos-footer{
+    text-align: center;
+    font-size: 2em;
+    color: #03264C;
+}
+/* ------------------ */
+
+@media (min-width: 481px){
+    nav{
+        display: block;
+    }
+
+    .ultima-visita img{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .ultima-visita .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .ultima-visita .article .descripcion{
+        margin-top: 30px;
+        display: block;
+    }
+
+    .ofertas img{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .ofertas .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .ofertas .article .descripcion{
+        margin-top: 30px;
+        display: block;
+    }
+}
+
+@media (min-width: 769px){
+    nav{
+        display: block;
+    }
+
+    .ultima-visita img{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .ultima-visita .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .ultima-visita .article .descripcion{
+        margin-top: 30px;
+        display: block;
+    }
+
+    .ofertas img{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .ofertas .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .ofertas .article .descripcion{
+        margin-top: 30px;
+        display: block;
+    }
+}
+
+
+/* *{
+    margin: 0; 
+    padding: 0;  
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+/* estilos del header */
+/* header{
+    background-color: #EAC926;
+}
+
+header p{
+    text-align: center;
+}
+
+header div.logo{
+    width: 50px;
+}
+
+.burger-menu{
+    text-align: center;
+    font-size: 2em;
+}
+
+.burger-menu i{
+    background-color: #03264C;
+    padding: 5px;
+    color: white;
+    border-radius: 5px
+}
+/* ------------------- */
+
+/* section .banner img{
+    width: 100px;
+} */
+
+/* estilos del main */
+/* main{
+    background-color: #ebebeb;
+}
+
+.ultima-visita{
+    text-align: center;
+    display: block;
+} 
+
+.ultima-visita article{
+    margin: 30px;
+}
+
+.ultima-visita .article {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.ultima-visita .article .descuento{
+    color: rgb(16, 179, 16);
+}
+
+.ultima-visita .article .descripcion{
+    margin-top: 30px;
+}
+
+.ultima-visita h2{
+    font-size: 24px;
+    padding: 20px;
+    text-align: start;
+}
+
+.ultima-visita .article i{
+    color: rgb(16, 179, 16);
+    border: 2px solid rgb(44, 170, 219);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.article .precio{
+    font-size: 18px;
+}
+
+.article .descuento{
+    font-size: 16px;
+}
+
+.article .descripcion{
+    font-size: 16px;
+}
+
+.ofertas{
+    text-align: center;
+    display: block;
+    padding: 10px;
+} 
+
+.ofertas article{
+    margin: 30px;
+}
+
+.ofertas .article {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: start;
+}
+
+.ofertas .article .descuento{
+    color: rgb(16, 179, 16);
+}
+
+.ofertas .article .descripcion{
+    margin-top: 30px;
+}
+
+.ofertas h2{
+    font-size: 24px;
+    padding: 20px;
+    text-align: start;
+}
+
+.ofertas .article i{
+    color: rgb(16, 179, 16);
+    border: 2px solid rgb(44, 170, 219);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.ofertas .precio{
+    font-size: 18px;
+}
+
+.ofertas .descuento{
+    font-size: 16px;
+}
+
+.ofertas .descripcion{
+    font-size: 16px;
+} */ 
+/* ------------------ */
+
+/* estilos del footer */
+/* .pie-de-pagina{
+    margin: 20px;
+}
+
+.pie-de-pagina h3{
+    text-align: center;
+}
+
+.pie-de-pagina p{
+    text-align:center;
+}
+
+.iconos-footer{
+    text-align: center;
+    font-size: 2em;
+    color: #03264C;
+} */
