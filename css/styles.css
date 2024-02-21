@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header {
+    width: 100%;
+    background-color: #EAC926;
+}
+
+header div.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+
+header nav {
+    display: none;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .form{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: none;
+    color: #666;
+    padding: 6px;
+    border-radius: 5px 0 0 5px;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header .form .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 0 5px 5px 0;
+    background-color: #FFF;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.last-visit article,
+.offers article {
+    margin: 10px;
+
+}
+
+
+
+article div.main-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+
+}
+
+article div.main-article i {
+    position: relative;
+    top: -25px;
+    margin-left: 80%;
+}
+
+/* precio y descuento */
+article div.main-article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* precio */
+article div.main-article div .price {
+    width: 30%;
+
+}
+/* descuento */
+article div.main-article div .discount {
+    width: 55%;
+
+}
+
+article div.main-article h4 {
+    display: none;
+
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main section article {
+    background-color: #fff;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+.offers {
+    margin-bottom: 20px;
+}
+
+.pie-pagina {
+    background-color: white;
+    padding: 2%;
+}
+
+.footerElement {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.footerElement i {
+    font-size: 2em;
+    color: #0044AA;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.footerElement p {
+    padding: 0 10% 0;
+}
+
+.rights p {
+    padding-top: 10px;
+    text-align: left;
+    opacity: .8;
+}
+
+/* Tableta */
+@media (min-width: 415px) {
+
+    div.top-header {
+        display: flex;
+        flex-wrap:nowrap;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .top-header p {
+        width: 25%;
+    }
+
+    
+
+    header div.logo {
+        padding: 1px;
+    }
+
+    header .form{
+        justify-content: space-around;
+    }
+
+    header .form .input {
+        border-radius: 0;
+        width: 75%;
+        padding: 2%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    header .form .submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        padding: 3% 8%;
+        font-size: 15px;
+        border-radius: 0;
+        border: 1px solid #000;
+        background-color: #FFF;
+        color: #666;
+        width: 10%;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    header nav ul{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 2%;
+    }
+
+    div.burger-menu i {
+        display: none;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .last-visit article,
+    .offers article {
+        width: 45%;
+    }
+
+    article div.main-article i {
+        font-size: 4vw;
+        top: -25px;
+    }
+    article div.main-article div {
+        justify-content: space-between;
+    }
+    article div.main-article div .price {
+        width: 30%;
+
+    }
+
+    article div.main-article div .discount {
+        width: 48%;
+
+    }
+
+    article div.main-article h4 {
+        display: flex;
+        padding-top: 10px;
+    }
+
+}
+
+/* PC */
+@media (min-width: 821px) {
+
+    header nav {
+        font-size: 16px;
+    }
+
+    .top-header p{
+        font-size: 18px;
+    }
+
+    .last-visit article,
+    .offers article {
+        width: 22.5%;
+        transition: all 200ms;
+    }
+
+    .last-visit article:hover,
+    .offers article:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    
+
+    article div.main-article div .discount {
+        width: 40%;
+    }
+
+    article div.main-article div i {
+        font-size: 1.8vw;
+        top: -25px;
+        transition: all 400ms;
+        
+    }
+    article div.main-article div i:hover {        
+        transform: rotate(-90deg)
+        
+    }
+
+    article div.main-article h4  {
+        opacity: 0;
+        padding-top: 10px;
+        transition: all 200ms;
+    }
+
+    article div.main-article h4:hover{
+        opacity: 1;
+    }
+
+    .pie-pagina{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerElement{
+        width: 33.33%;
+        margin: 0;
+    }
+
+    .footerElement i{
+        transition: all 300ms;
+    }
+    .footerElement i:hover{
+        color: #1183cf;
+    }
+
+    .footerElement i{
+        font-size:2.5vw;
+    }
+    .footerElement p, .footerElement h4{
+        font-size: 1vw;
+    }
+
+    .rights{
+        width: 100%;
+        padding-top: 2%;
+    }
+}
